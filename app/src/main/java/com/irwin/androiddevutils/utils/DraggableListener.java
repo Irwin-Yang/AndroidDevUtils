@@ -70,7 +70,6 @@ public class DraggableListener implements View.OnTouchListener {
         int r = layoutRect.right + offsetX;
         int b = layoutRect.bottom + offsetY;
         mView.layout(l, t, r, b);
-        Log.i("Drag", "Drag(" + offsetX + "," + offsetY + ")");
         if (offsetX != 0 || offsetY != 0) {
             mTransitionX += Math.abs(offsetX);
             mTransitionY += Math.abs(offsetY);
