@@ -84,7 +84,7 @@ public class ReflectUtil {
                 return 0;
             }
             for (Field f : fieldsArray) {
-                // We can't and need not to copy constant fields.
+                // We  need not to copy constant fields.
                 if (Modifier.isFinal(f.getModifiers()) && Modifier.isStatic(f.getModifiers())) {
                     continue;
                 }

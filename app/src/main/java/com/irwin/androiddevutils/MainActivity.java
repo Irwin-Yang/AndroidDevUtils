@@ -1,5 +1,6 @@
 package com.irwin.androiddevutils;
 
+import android.graphics.Rect;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -10,6 +11,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.irwin.androiddevutils.utils.DraggableListener;
+
+import java.lang.ref.PhantomReference;
+import java.lang.ref.Reference;
+import java.lang.ref.WeakReference;
+import java.util.WeakHashMap;
 
 public class MainActivity extends AppCompatActivity {
 
