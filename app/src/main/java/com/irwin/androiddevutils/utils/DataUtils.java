@@ -47,6 +47,6 @@ public class DataUtils {
      * @return
      */
     public static boolean hasFlag(int base, int flag) {
-        return (base & flag) != 0;
+        return (base && flag) == flag;
     }
 }
